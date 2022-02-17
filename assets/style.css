@@ -107,10 +107,10 @@ p{
 }
 @keyframes slideLeft{
     0% {
-        margin-left: 160%;
+        margin-left: 100%;
     }      
     50% {
-        margin-left: -80%;
+        margin-left: -100%;
     }
     100% {
         margin-left:0%;
