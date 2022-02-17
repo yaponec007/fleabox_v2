@@ -57,11 +57,15 @@ p{
 #showcase .content-wrap, #section-a .content-wrap{
     padding: 0 1.5em;
 }
-#showcase p{
-    animation-duration: 5s;
-    animation-name: slidein;
-    animation-direction: alternate;
+#showcase .content-wrap p{
+    width: 100%;
+    animation: 2s linear 1s alternate slideLeft;
 }
+#showcase .content-wrap p:after{
+    width: 100%;
+    animation: 2s linear 1s alternate slideRight;
+}
+
 #section-a{
     background: #eaeaea;
     color: #333;
@@ -106,12 +110,21 @@ p{
     color: #2690d4;
     text-decoration: none;
 }
-@keyframes slidein{
+@keyframes slideLeft{
     from {
-        margin-left: 100%;
-        width: 100%;
+        margin-left: 200%;
+    }      
+    to {
+        margin-left: -65%;
+    }  
+}
+@keyframes slideRight{
+    from {
+        margin-left: -65%;
+    }      
+    to {
+        margin-left: 0%;
     }
-    
 }
 @media (min-width: 701px){
     .grid {
