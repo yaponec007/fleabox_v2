@@ -148,3 +148,12 @@ p{
         width: 31%;
     }
 }
+@media (max-width: 380px){
+    .card>img{
+    width: 25%;
+    height: 25%;
+    position: relative;
+    margin: auto;
+    top: 1em;
+    }
+}
