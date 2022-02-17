@@ -57,15 +57,10 @@ p{
 #showcase .content-wrap, #section-a .content-wrap{
     padding: 0 1.5em;
 }
-#showcase .content-wrap p{
+#showcase .content-wrap h1{
     width: 100%;
-    animation: 2s linear 1s alternate slideLeft;
+    animation: 2s linear 1s 2 alternate slideLeft;
 }
-#showcase .content-wrap p:after{
-    width: 100%;
-    animation: 2s linear 1s alternate slideRight;
-}
-
 #section-a{
     background: #eaeaea;
     color: #333;
@@ -112,20 +107,20 @@ p{
 }
 @keyframes slideLeft{
     from {
-        margin-left: 200%;
+        margin-left: 160%;
     }      
     to {
-        margin-left: -65%;
+        margin-left: -80%;
     }  
 }
-@keyframes slideRight{
+/* @keyframes slideRight{
     from {
         margin-left: -65%;
     }      
     to {
         margin-left: 0%;
     }
-}
+} */
 @media (min-width: 701px){
     .grid {
         display: grid;
