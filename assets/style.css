@@ -116,14 +116,7 @@ p{
         margin-left:0%;
     }  
 }
-/* @keyframes slideRight{
-    from {
-        margin-left: -65%;
-    }      
-    to {
-        margin-left: 0%;
-    }
-} */
+
 @media (min-width: 701px){
     .grid {
         display: grid;
@@ -147,13 +140,4 @@ p{
     #section-b li{
         width: 31%;
     }
-}
-@media (max-width: 380px){
-    .card>img{
-    width: 25%;
-    height: 25%;
-    position: relative;
-    margin: auto;
-    top: 1em;
-    }
-}
+};
